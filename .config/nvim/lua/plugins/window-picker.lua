@@ -1,3 +1,4 @@
+-- Customizes the look of the window picker when you create splits and open a new buffer
 return {
   "s1n7ax/nvim-window-picker",
   version = "2.*",
