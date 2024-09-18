@@ -8,5 +8,8 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  { import = "astrocommunity.snippet.nvim-snippets" },
+  { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   -- import/override with your plugins folder
 }

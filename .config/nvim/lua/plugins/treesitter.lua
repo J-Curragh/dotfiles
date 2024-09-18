@@ -5,7 +5,6 @@ return {
     ensure_installed = {
       "lua",
       "vim",
-      "help",
       "markdown",
       "markdown_inline",
       "bash",

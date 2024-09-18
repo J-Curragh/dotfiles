@@ -1,11 +1,21 @@
 ---@type LazySpec
 return {
-  -- One-offs
-  "andweeb/presence.nvim",
+  -- QOL improvements
   {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
+    "famiu/bufdelete.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          mappings = {
+            n = {
+              ["<leader>c"] = { function() require("bufdelete").bufdelete(0, false) end, desc = "Delete buffer" },
+            },
+          },
+        },
+      },
+    },
   },
 
   -- Disable plugins (e.g.)
